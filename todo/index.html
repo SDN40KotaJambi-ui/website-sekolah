@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App - Manajemen Tugas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">📋 To-Do List</h1>
+                <p class="subtitle">Manajemen tugas harian Anda dengan mudah</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="todoInput" 
+                        class="input-field" 
+                        placeholder="Tambahkan tugas baru..."
+                        autocomplete="off"
+                    >
+                    <button id="addBtn" class="btn btn-add">
+                        <span class="btn-icon">+</span>
+                        <span class="btn-text">Tambah</span>
+                    </button>
+                </div>
+                <div class="input-hint">Tekan Enter atau klik tombol Tambah untuk menambahkan tugas</div>
+            </section>
+
+            <!-- Filter & Sort Section -->
+            <section class="controls-section">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="filter-icon">📁</span>
+                        Semua
+                    </button>
+                    <button class="filter-btn" data-filter="active">
+                        <span class="filter-icon">⏳</span>
+                        Aktif
+                    </button>
+                    <button class="filter-btn" data-filter="completed">
+                        <span class="filter-icon">✅</span>
+                        Selesai
+                    </button>
+                </div>
+                <div class="sort-group">
+                    <select id="sortSelect" class="sort-select">
+                        <option value="newest">Terbaru</option>
+                        <option value="oldest">Terlama</option>
+                        <option value="completed">Selesai</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <span class="stat-icon">📊</span>
+                    <div class="stat-info">
+                        <p class="stat-label">Total Tugas</p>
+                        <p class="stat-value" id="totalTasks">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">⏳</span>
+                    <div class="stat-info">
+                        <p class="stat-label">Aktif</p>
+                        <p class="stat-value" id="activeTasks">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">✅</span>
+                    <div class="stat-info">
+                        <p class="stat-label">Selesai</p>
+                        <p class="stat-value" id="completedTasks">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Todo List Section -->
+            <section class="todo-section">
+                <div id="todoList" class="todo-list">
+                    <!-- Todos akan ditampilkan di sini -->
+                </div>
+                <div id="emptyState" class="empty-state">
+                    <p class="empty-icon">📭</p>
+                    <p class="empty-message">Tidak ada tugas. Tambahkan tugas baru untuk memulai!</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <button id="clearBtn" class="btn btn-danger btn-small">
+                <span>🗑️</span>
+                Hapus Selesai
+            </button>
+            <button id="exportBtn" class="btn btn-secondary btn-small">
+                <span>💾</span>
+                Export
+            </button>
+            <button id="importBtn" class="btn btn-secondary btn-small">
+                <span>📥</span>
+                Import
+            </button>
+            <input type="file" id="importFile" accept=".json" style="display: none;">
+            <p class="footer-text">Data disimpan otomatis di Local Storage</p>
+        </footer>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
