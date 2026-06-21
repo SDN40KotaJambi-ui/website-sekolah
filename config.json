@@ -1,0 +1,142 @@
+{
+  "school": {
+    "name": "SD Negeri 40 Kota Jambi",
+    "shortName": "SDN 40 Jambi",
+    "tagline": "Membentuk Generasi Cerdas dan Berkarakter Sejati",
+    "description": "Sekolah dasar unggulan dengan program ekstrakurikuler beragam",
+    "founded": 1985,
+    "address": "Jl. Pendidikan No. 40, Kota Jambi",
+    "city": "Kota Jambi",
+    "province": "Jambi",
+    "country": "Indonesia"
+  },
+  "contact": {
+    "email": "info@sdn40jambi.sch.id",
+    "phone": "+62 812-3456-7890",
+    "whatsapp": "+62 812-3456-7890",
+    "instagram": "@sdn40jambi",
+    "youtube": "SDN 40 Kota Jambi",
+    "facebook": "SDN 40 Kota Jambi",
+    "website": "https://sdn40jambi.sch.id"
+  },
+  "principal": {
+    "name": "Ibu Dr. Siti Nurhaliza, S.Pd., M.Pd.",
+    "experience": "20+ tahun di bidang pendidikan",
+    "biography": "Kepala Sekolah SD Negeri 40 Kota Jambi yang berpengalaman lebih dari 20 tahun di bidang pendidikan. Beliau berkomitmen untuk terus meningkatkan kualitas pendidikan dan memberikan yang terbaik bagi semua siswa."
+  },
+  "vision": "Menjadi sekolah dasar unggulan yang menghasilkan peserta didik beriman, berakhlak mulia, cerdas, dan mandiri untuk menghadapi perkembangan zaman.",
+  "mission": [
+    "Mengembangkan potensi siswa secara optimal",
+    "Menanamkan nilai-nilai karakter yang kuat",
+    "Menciptakan lingkungan belajar yang kondusif",
+    "Mengintegrasikan teknologi dalam pembelajaran"
+  ],
+  "programs": [
+    {
+      "id": "pramuka",
+      "name": "Pramuka",
+      "description": "Membangun karakter dan kepemimpinan melalui kegiatan outdoor dan pelatihan disiplin.",
+      "day": "Jumat",
+      "time": "14:00-16:00"
+    },
+    {
+      "id": "cermat",
+      "name": "Cerdas Cermat",
+      "description": "Kompetisi pengetahuan untuk meningkatkan pemahaman akademik siswa.",
+      "day": "Rabu",
+      "time": "14:00-15:30"
+    },
+    {
+      "id": "drumband",
+      "name": "Drum Band",
+      "description": "Menampilkan bakat musik dan seni marching untuk berbagai acara.",
+      "day": "Senin & Kamis",
+      "time": "14:00-16:00"
+    },
+    {
+      "id": "tari",
+      "name": "Tari Tradisional",
+      "description": "Melestarikan budaya melalui pembelajaran seni tari nusantara.",
+      "day": "Selasa & Jumat",
+      "time": "14:00-15:30"
+    },
+    {
+      "id": "karate",
+      "name": "Karate",
+      "description": "Mengembangkan disiplin, kepercayaan diri, dan kemampuan pertahanan diri.",
+      "day": "Senin & Rabu",
+      "time": "14:00-15:30"
+    },
+    {
+      "id": "futsal",
+      "name": "Futsal",
+      "description": "Olahraga tim untuk meningkatkan kerjasama dan kesehatan fisik.",
+      "day": "Selasa & Kamis",
+      "time": "14:00-16:00"
+    },
+    {
+      "id": "dokter",
+      "name": "Dokter Kecil",
+      "description": "Melatih siswa menjadi petugas kesehatan sekolah yang bertanggung jawab.",
+      "day": "Rabu",
+      "time": "13:00-14:00"
+    },
+    {
+      "id": "hadrah",
+      "name": "Kompangan/Hadrah",
+      "description": "Seni musik tradisional untuk mengekspresikan kreativitas siswa.",
+      "day": "Jumat",
+      "time": "14:00-15:30"
+    },
+    {
+      "id": "quran",
+      "name": "Seni Baca Al-Qur'an",
+      "description": "Pembelajaran membaca dan menghafal Al-Qur'an dengan tartil yang baik.",
+      "day": "Senin-Jumat",
+      "time": "Pagi sebelum pelajaran"
+    },
+    {
+      "id": "solo",
+      "name": "Solo Song",
+      "description": "Bakat menyanyi solo untuk mengembangkan kepercayaan diri di atas panggung.",
+      "day": "Jumat",
+      "time": "15:00-16:00"
+    },
+    {
+      "id": "cerita",
+      "name": "Cerita Bergambar",
+      "description": "Seni bercerita dengan ilustrasi untuk mengasah kreativitas dan imajinasi.",
+      "day": "Rabu",
+      "time": "14:00-15:30"
+    },
+    {
+      "id": "modeling",
+      "name": "Modeling",
+      "description": "Program fashion dan etika untuk mengembangkan kepercayaan diri siswa.",
+      "day": "Selasa & Kamis",
+      "time": "14:00-15:30"
+    }
+  ],
+  "schoolHours": {
+    "monday": "07:00 - 13:30",
+    "tuesday": "07:00 - 13:30",
+    "wednesday": "07:00 - 13:30",
+    "thursday": "07:00 - 13:30",
+    "friday": "07:00 - 12:00",
+    "saturday": "Libur",
+    "sunday": "Libur"
+  },
+  "socialMedia": {
+    "instagram": "https://instagram.com/sdn40jambi",
+    "youtube": "https://youtube.com/@sdn40jambi",
+    "facebook": "https://facebook.com/sdn40jambi",
+    "tiktok": "https://tiktok.com/@sdn40jambi"
+  },
+  "theme": {
+    "primaryColor": "#10b981",
+    "secondaryColor": "#059669",
+    "accentColor": "#06b6d4",
+    "darkColor": "#1a3a2a",
+    "lightColor": "#f0fdf4"
+  }
+}

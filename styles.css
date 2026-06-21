@@ -1,0 +1,199 @@
+/* Navigation Styles */
+.nav-link {
+  color: #1a3a2a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #10b981;
+}
+
+.nav-link-dropdown {
+  color: #1a3a2a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link-dropdown:hover {
+  color: #10b981;
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modal Styles */
+.modal-hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-visible {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Gallery Thumbnail Styles */
+.gallery-thumb {
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.gallery-thumb:hover {
+  border-color: #10b981;
+}
+
+.gallery-thumb.active {
+  border-color: #10b981;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  #home {
+    height: 50vh;
+  }
+
+  .gallery-thumb {
+    max-width: 80px;
+  }
+}
+
+/* Scroll Smooth Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:focus {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Section Padding */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Shadow Effects */
+.shadow-lg {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  #contact-prev,
+  #contact-next,
+  #mobile-menu-btn {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f2937;
+    color: #f3f4f6;
+  }
+
+  .navbar {
+    background-color: #111827;
+  }
+
+  .nav-link {
+    color: #d1d5db;
+  }
+}
+
+/* Loading Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
